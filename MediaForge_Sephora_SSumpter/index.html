@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sephora - MediaForge - Sam Sumpter</title>
+</head>
+<body style="font-family:Arial, Verdana;background-color:#fff;">
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jssor.core.js"></script>
+    <script type="text/javascript" src="js/jssor.utils.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script>
+
+        jQuery(document).ready(function ($) {
+            var options = {
+
+                $AutoPlay: true,
+                $DragOrientation: 3
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        });
+    </script>
+    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 300px;
+        height: 600px;">
+        <!-- Slider Container -->
+        <a href="http://www.sephora.com">
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 300px; height: 600px;
+            overflow: hidden;">
+            <div><img u="image" src="img/image1.jpg" alt="Sephora-Lips" /></div>
+            <div><img u="image" src="img/image2.jpg" alt="Sephora-Nails"/></div>
+            <div><img u="image" src="img/image3.jpg" alt="Sephora-Collections"/></div>
+        </div>
+        </a>
+    </div>
+</body>
+</html>
